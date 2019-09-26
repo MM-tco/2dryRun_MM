@@ -14,7 +14,6 @@ class ltcl_master definition for testing
 endclass.
 
 
-
 class ltcl_master implementation.
 
   method check.
