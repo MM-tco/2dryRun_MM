@@ -9,6 +9,5 @@ class ZTCOLAB definition
              value type string,
            end of ty_data.
 
-
     class-methods execute
       returning value(data) type ty_data.
