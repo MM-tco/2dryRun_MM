@@ -23,7 +23,6 @@ class ltcl_master implementation.
 
   method setup.
 
-
   endmethod.
 
   method teardown.
