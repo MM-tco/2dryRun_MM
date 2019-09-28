@@ -11,6 +11,7 @@ class ltcl_master definition for testing
     methods: setup.
     methods: teardown.
 
+
 endclass.
 
 class ltcl_master implementation.
