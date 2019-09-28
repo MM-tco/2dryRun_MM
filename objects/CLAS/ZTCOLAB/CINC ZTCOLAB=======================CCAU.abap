@@ -21,6 +21,7 @@ class ltcl_master implementation.
     cl_abap_unit_assert=>assert_equals( exp = 'TCOLAB1234' act = structure-value ).
   endmethod.
 
+
   method setup.
 
   endmethod.
