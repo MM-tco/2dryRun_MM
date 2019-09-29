@@ -11,6 +11,7 @@ class ltcl_master definition for testing
     methods: setup.
     methods: teardown.
 
+
 endclass.
 
 class ltcl_master implementation.
@@ -18,9 +19,8 @@ class ltcl_master implementation.
   method check.
     data(structure) = ztcolab=>execute( ).
     cl_abap_unit_assert=>assert_equals( exp = 'Hello' act = structure-key ).
-    cl_abap_unit_assert=>assert_equals( exp = 'TCOLA1B' act = structure-value ).
+    cl_abap_unit_assert=>assert_equals( exp = 'TCOLAB' act = structure-value ).
   endmethod.
-
 
   method setup.
 
