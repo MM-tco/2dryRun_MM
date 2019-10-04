@@ -13,7 +13,7 @@ data ls_tadir type tadir.
 data ls_data type ty_data.
 data lv_devclass type tadir-devclass.
 data lv_execute type string value 'EXECUTE'.
-select single devclass from tadir into lv_devclass where author = sy-uname and ( devclass like 'ZMASTER%' or devclass like '%TCOLAB%' ) and object = 'DEVC'.
+select single devclass from tadir into lv_devclass where ( devclass like 'ZMASTER%' or devclass like '%TCOLAB%' ) and object = 'DEVC'.
 if sy-subrc = 0.
   select single * from tadir into ls_tadir where devclass = lv_devclass and object = 'CLAS'.
 
